@@ -1,0 +1,785 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body
+{
+    width: 100%;
+    min-height: 100%;
+    background: #fff2ea;
+    overflow-x: hidden;
+    /* background-image: url('web2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+
+
+.start-animation 
+{
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+
+    background-color: black;
+    z-index: 4;
+
+    background-image: url("start-animation.jpg");
+    background-size:cover;
+    
+    animation: start-animation 3s ease-out forwards;
+    pointer-events:none;
+}
+
+@keyframes start-animation
+{    
+    0%
+    {
+        opacity: 1;
+    }
+    10%
+    {
+        opacity: 1;        
+    }
+    20%
+    {
+        opacity: 1;
+    }
+    30%
+    {
+        opacity: 0.7;
+    }
+    40%
+    {
+        opacity: 0.6;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    60%
+    {
+        opacity: 0.4;
+    }
+    70%
+    {
+        opacity: 0.3;
+    }
+    80%
+    {
+        opacity: 0.2;
+    }
+    90%
+    {
+        opacity: 0.1;
+    }
+    100%
+    {
+        opacity: 0;
+        display:none;
+    }        
+}
+
+
+.spiderman-them-text p:nth-of-type(1)
+{
+    position: fixed;
+    font-family: 'American-Captain';
+    font-size : 30px;
+    font-weight: 1000;
+    left: 190px;
+    top: 40px;
+    z-index:3; 
+    color: white;
+    transform: scaleX(1) scaleY(1);
+    
+    animation: spiderman-them-p1 3s ease-out forwards;
+    
+}
+
+@keyframes spiderman-them-p1 
+{
+    0%
+    {
+         z-index: 3; 
+         
+    }
+    50%
+    {
+        z-index: 3;
+       
+    }
+    100%   
+    {
+         z-index: 0;
+         color: gray;
+         opacity: 0.2;
+         
+    }
+}
+
+.spiderman-them-text p:nth-of-type(2)
+{
+    position: fixed;
+    font-family: 'Heroes-Legend';
+    font-size : 30px;
+    font-weight: 1000;
+    left: 40px;
+    top: 100px;
+     z-index:3;
+    color: gray;
+    transform: scaleX(1) scaleY(1.5);
+    
+    animation: spiderman-them-p2 3s ease-out forwards;
+    
+}
+
+@keyframes spiderman-them-p2 
+{
+    0%
+    {
+         z-index: 3; 
+    }
+    50%
+    {
+        z-index: 3;
+     
+    }
+    100%
+    {
+         z-index: 0;
+         opacity: 0.2; 
+         transform: scaleX(1) scaleY(1.2);
+         
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* text designing */
+            
+ .portfolio p:nth-of-type(1)
+{
+    position: absolute;
+    font-family: 'survivant';
+    font-size : 70px;
+    font-weight: 950;
+    left: -100px;
+    top: 100px;
+    transform: scaleX(1) scaleY(2);
+    /* color: #f44612; */
+    letter-spacing: 1000px;
+    z-index: 2;
+    
+    
+    background-image:url("text-bg1.jpg");
+    background-clip : text ;       
+    background-size: 100% 100%;
+    background-position: center;
+    color: transparent;
+    
+    
+    animation: portfolio-p1 linear ;
+    animation-timeline: --hero-scroll;
+}
+
+@keyframes portfolio-p1
+{
+    from
+    {
+        letter-spacing: 1000px;
+        left: -100px;
+    }
+    to
+    {
+        letter-spacing: 0;
+        left: -3px;
+    }
+}
+
+
+ 
+ .portfolio p:nth-of-type(2)
+{
+    position: absolute;
+    font-family: 'survivant';
+    font-size : 70px;
+    font-weight: 950;
+    left: 140px;
+    top: 230px;
+    transform: scaleX(2) scaleY(2);
+    color: #f44612 ;
+    letter-spacing: 1000px /* 100px */;
+    z-index: 2;
+    
+    background-image:url("text-bg1.jpg");
+    background-clip : text ;       
+    background-size: 100% 100%;
+    background-position: center;
+    color: transparent;
+    
+    
+    animation: portfolio-p2 linear ;
+    animation-timeline: --hero-scroll; 
+} 
+
+@keyframes portfolio-p2
+{
+    from
+    {
+        letter-spacing: 1000px;
+    }
+    to
+    {
+        letter-spacing: 100px;
+    }
+}
+
+
+
+.welcome-to-my p:nth-of-type(1)
+{
+    position: absolute;
+    font-family: 'DLyleHand';
+    font-size : 70px;
+    font-weight: 950;
+    top: -100px;
+    z-index: 2;
+    
+    animation: welcome-to-my-p1 linear ;
+    animation-timeline: --hero-scroll;
+}
+
+@keyframes welcome-to-my-p1
+{
+    0%
+    {
+        top: -100px;
+    }
+    25%
+    {
+        top: 20px;
+    }
+    50%
+    {
+        top: 20px;
+    }
+    100%
+    {
+        top: 20px;
+    }
+}
+
+
+.welcome-to-my p:nth-of-type(2)
+{
+    position: absolute;
+    font-family: 'DLyleHand';
+    font-size : 70px;
+    font-weight: 950;
+    top: 20px;
+    left: 170px;
+    z-index: 2;
+    
+    
+    animation: welcome-to-my-p2 linear ;
+    animation-timeline: --hero-scroll;
+}
+
+@keyframes welcome-to-my-p2
+{
+    0%
+    {
+        top: -100px;
+    }
+    50%
+    {
+        top: 20px;
+        letter-spacing: 0;
+    }
+    60%
+    {
+        top: 20px;
+        letter-spacing: 0;
+    }
+    70%
+    {
+        top: -50px;
+        
+    }
+    75%
+    {
+        letter-spacing: 15px;
+    }
+    80%
+    {
+        top: 20px;
+        letter-spacing: 0;
+    }
+    90%
+    {
+        top: -50px;
+        
+    }
+    95%
+    {
+        letter-spacing: 15px;
+    }
+    
+    100%
+    {
+        top: 20px;
+        letter-spacing: 0;
+    }
+}
+
+
+
+                /* scroll bar */
+                
+.scroll-bar
+{
+    position: fixed;
+    width: 50px;
+    height: 200px;
+    left: 86%;
+    border: 3px solid #11111180; 
+    background-color: #ff002f80;
+    border-radius: 50px;
+    
+    
+} 
+.scroll-bar:after
+{
+    position: absolute;
+    content:" ";
+    width: 10px;
+    height: 20px;
+    border-top: 5px solid transparent ;
+    border-left: 2px solid white ;
+    border-bottom: 5px solid transparent ;
+    border-right: 5px solid transparent ;
+    left: 50%;
+    
+    animation: scroll-web linear;
+    animation-timeline: --hero-scroll;
+}
+
+@keyframes scroll-web
+{
+    from
+    {
+        height: 20px;
+    }
+    to
+    {
+        height: 170px;
+    }
+}
+
+
+
+.scroll-bar::before 
+{
+    position: absolute;
+    content:" ";
+    width: 40px;
+    height: 40px;
+    left: 3px;
+    z-index: 1;
+    top: 0;
+    
+            background-image:url("scrolling-spider.png");
+background-size: 200% 200% ;
+background-position: center;
+    
+    
+    animation: scroll-bar linear;
+    animation-timeline: --hero-scroll;
+    
+    transform: rotate(180deg);
+    
+}
+
+@keyframes scroll-bar
+{
+    from
+    {
+        top: 0;
+    }
+    to
+    {
+        top: 80%;
+    }
+}
+
+
+ /* dot-arrow */ 
+ 
+.dot-arrow 
+{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 270px;
+    top: 45px;
+    
+    
+    background-image: url("dot-arrow.png");
+    background-size: 90% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    animation: dot-arrow linear;
+    animation-timeline: --hero-scroll;
+    
+}
+
+@keyframes dot-arrow 
+{
+    0%
+    {
+        opacity: 1;
+    }
+    10%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+.instruction-text p:nth-of-type(1)
+{
+    position: fixed;
+    font-size: 15px;
+    font-weight: 800;
+    left: 80px;
+    top: 0px;
+    font-family: 'survivant';
+    color: #55a630;
+    opacity: 1;
+    
+    
+    /* animation-delay: 4s; */
+    animation: instruction-text-p1 linear;
+    animation-timeline: --hero-scroll;
+}
+
+@keyframes instruction-text-p1 
+{
+    0%
+    {
+        opacity: 1;
+    }
+    10%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+.instruction-text p:nth-of-type(2)
+{
+    position: fixed;
+    font-size: 10px;
+    font-weight: 800;
+    left: 80px;
+    top: 30px;
+    font-family: 'survivant';
+    transform: scaleY(5);
+    
+    
+    /* animation-delay: 4s; */
+    animation: instruction-text-p2 linear;
+    animation-timeline: --hero-scroll;
+}
+
+@keyframes instruction-text-p2 
+{
+    0%
+    {
+        opacity: 1;
+    }
+    10%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+.hand
+{
+    position: fixed;
+    width: 50px;
+    height: 70px;
+    left: 335px;
+    top: 130px;
+    background-image: url("hand.png");
+    background-size: 130% 130%;
+    background-position: center;
+    
+    
+    
+    animation: hand1 10s ease-out 3s forwards , hand2 linear;
+    animation-timeline: auto , --hero-scroll;
+    /* animation-delay: 3s; */
+    /* animation: hand linear; */
+}
+
+@keyframes hand1
+{
+    0%
+    {
+        top: 130px;
+    }
+    10%
+    {
+        top: 100px;
+    }
+    20%
+    {
+        top: 130px;
+    }
+    30%
+    {
+        top: 100px;
+    }
+    40%
+    {
+        top: 130px;
+    }
+    50%
+    {
+        top: 100px;
+    }
+    60%
+    {
+        top: 130px;
+    }
+    70%
+    {
+        top: 100px;
+    }
+    80%
+    {
+        top: 130px;
+    }
+    90%
+    {
+        top: 100px;
+    }
+    100%
+    {
+        top: 130px;
+    }
+}
+
+
+@keyframes hand2
+{
+    0%
+    {
+        opacity: 1;
+    }
+    10%
+    {
+        opacity: 0;
+        
+    }
+    20%
+    {
+        opacity: 0;
+    }
+    30%
+    {
+        opacity: 0;
+    }
+    40%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    60%
+    {
+        opacity: 0;
+    }
+    70%
+    {
+        opacity: 0;
+    }
+    80%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0;
+        
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+
+ .for-sections 
+{
+    display: none;
+}
+
+.hero-section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+
+    overflow-y: auto;
+    overflow-x: hidden; 
+   
+   display: block;
+   
+   background: white;
+   
+   background-image: url('web2.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed; 
+
+   /* imporing for thr scrolling */
+   scroll-timeline-name: --hero-scroll;
+   scroll-timeline-axis: block;
+    
+}
+.frames-container 
+{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px; 
+
+    z-index: 1;
+
+    pointer-events: none;
+    
+          
+}
+
+/* THIS is your original orange area */
+.orange-frame
+{
+    position: absolute;
+
+    left: 5%;
+    top: 55%;
+
+    width: 90%;
+    height: 300px;
+
+    background: #d91313;
+    
+}
+
+
+/* IMAGE CANVAS IS BIGGER */
+.frames-canvas
+{
+    position: absolute;
+
+    left: 5%;
+    top: 13.2%;
+
+    width: 90%;
+    height:  600px  /* calc(100vh - 30px) */;
+
+    background: transparent;
+
+    z-index:4;
+    
+    touch-action: pan-y;
+    pointer-events: auto;    
+    
+    border-top-right-radius: 150px;
+    
+    
+    /* border: 5px solid black; */ 
+
+}
+
+.scroll-snaper
+{
+
+ position: relative;
+   width: 100%;
+    height: 300vh;
+
+    z-index: 0;
+}
+
+.section-about-me 
+{
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    border: 5px solid black;
+   background: #fff2ea;
+   display : block;
+   z-index: 5;
+}   
