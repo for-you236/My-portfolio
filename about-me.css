@@ -1,0 +1,223 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body
+{
+    width: 100%;
+    min-height: 100%;
+    background: #fff2ea;
+    overflow-x: hidden;
+}
+
+
+.section-about-me
+{
+    position: relative; 
+    width: 100%;
+    height: 120vh;
+    display : block;
+    overflow: hidden;
+    /* border: 5px solid black; */
+    overflow: auto;
+
+}
+
+/* .section-about-me
+{
+    --color: gray;
+    background-image: linear-gradient( 0deg , transparent 24% , var(--color) 25% , var(--color) 26% ,  transparent 27% ,  transparent 74% , var(--color) 75% , var(--color) 76% , transparent 77% ,  transparent ) , 
+    linear-gradient( 90deg , transparent 24% , var(--color) 25% , var(--color) 26% ,  transparent 27% ,  transparent 74% , var(--color) 75% , var(--color) 76% , transparent 77% ,  transparent );
+    
+    background-size: 50px 50px ;
+}
+ */
+
+.section-about-me .strip:nth-of-type(1)
+{
+    position: relative; 
+    width: 150%;
+    height: 80px;
+    left: -100px;
+    top: 60px;
+    background-color: red;
+    border: 5px solid black;
+    transform: rotate(-20deg);
+    
+}
+
+.section-about-me .strip:nth-of-type(1) .strip-content
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    width: 600px;
+    animation: moveleft 8s linear infinite;
+    
+}
+
+.section-about-me .strip:nth-of-type(1) .strip-content .strip-items
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+
+.section-about-me .strip:nth-of-type(1) .strip-content .strip-items video
+{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.section-about-me .strip:nth-of-type(1) .strip-content .strip-items p
+{
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'survivant';
+    text-align: center;
+    transform: scaley(2);
+    flex-shrink: 0;
+    
+}
+
+@keyframes moveleft
+{
+    from
+    {
+        transform: translateX(0);
+    }
+    to
+    {
+        transform: translateX(-100%);
+    }
+}
+
+
+.section-about-me .strip:nth-of-type(2)
+{
+    position: relative; 
+    width: 150%;
+    height: 80px;
+    left: -100px;
+    top: -60px;
+    background-color: red;
+    border: 3px solid black;
+    transform: rotate(12deg);
+}
+
+.section-about-me .strip:nth-of-type(2) .strip-content
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    width: 600px;
+    animation: moveright 8s linear infinite;
+    
+}
+
+.section-about-me .strip:nth-of-type(2) .strip-content .strip-items
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+
+.section-about-me .strip:nth-of-type(2) .strip-content .strip-items video
+{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.section-about-me .strip:nth-of-type(2) .strip-content .strip-items p
+{
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'survivant';
+    text-align: center;
+    transform: scaley(2);
+    flex-shrink: 0;
+    
+}
+
+ @keyframes moveright
+{
+    from
+    {
+        transform: translateX(-100%);
+    }
+    to
+    {
+        transform: translateX(0);
+    }
+}
+ 
+ 
+ 
+.section-about-me .about
+{
+    position: relative;
+    font-family: 'Candy-Planet';
+    font-size: 35px;
+    font-weight: 500px; 
+    left: 50px;
+    top: 15px;
+    -webkit-text-stroke: 1px;
+    color: #659bb9;
+}
+
+.section-about-me .me
+{
+    position: relative;
+    font-family: 'Smoothy-Candy';
+    font-size: 30px;
+    font-weight: 500px; 
+    left: 150px;
+    top: -10px;
+    -webkit-text-stroke: 1px ;
+}
+
+.section-about-me .introduction
+{
+    position: relative;
+    font-family: 'wildflowers';
+    font-size: 25px;
+    font-weight:900px;
+    
+    
+}
+
+
+ .section-about-me .about-me-img 
+{
+    position: relative;
+    width: 270px;
+    height: 500px;
+    object-fit: contain;
+    float: left;
+    margin-left: -80px;
+    background: url("about-me-img.png");
+    background-size: cover; 
+    background-position: 0 10px;
+    background-repeat: no-repeat;
+    overflow: visible;
+} 
